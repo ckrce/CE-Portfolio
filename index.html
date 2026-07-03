@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Kyle Porras, RCE, SO2. — Portfolio</title>
+    <meta name="description" content="Structural engineering portfolio — projects, experience, and credentials.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Background grid: fixed, echoes column/row reference lines on a structural drawing -->
+    <div class="grid-overlay" aria-hidden="true">
+        <div class="grid-labels grid-labels--top">
+            <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span>
+        </div>
+        <div class="grid-labels grid-labels--side">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+        </div>
+    </div>
+
+    <!-- ============ TITLE BLOCK / NAV ============ -->
+    <header class="titleblock" id="top">
+        <div class="titleblock__row">
+            <div class="titleblock__mark">
+                <span class="titleblock__initials">C K</span>
+                <span class="titleblock__discipline">STRUCTURAL</span>
+            </div>
+
+            <nav class="titleblock__nav" id="site-nav">
+                <a href="#about"><span class="sheet-tag">S-101</span>Profile</a>
+                <a href="#skills"><span class="sheet-tag">S-201</span>Skills</a>
+                <a href="#projects"><span class="sheet-tag">S-301</span>Projects</a>
+                <a href="#experience"><span class="sheet-tag">S-401</span>Experience</a>
+                <a href="#contact"><span class="sheet-tag">S-501</span>Contact</a>
+            </nav>
+
+            <button class="titleblock__toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ============ HERO / S-100 ============ -->
+        <section class="sheet sheet--hero" id="hero">
+            <div class="sheet__meta">
+                <span>PORTFOLIO</span>
+                <span>SHEET</span>
+                <span class="sheet__number">S-100</span>
+            </div>
+
+            <div class="hero__content">
+                <p class="eyebrow">LICENSED CIVIL ENGINEER
+                </p>
+                <h1 class="hero__title">CHRISTIAN KYLE D. PORRAS
+                </h1>
+                <p class="hero__lede">
+                    Civil Engineering Licensure Exam March 2026 passer
+                </p>
+
+                <div class="hero__actions">
+                    <a href="#projects" class="btn btn--primary">View Projects</a>
+                    <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+                </div>
+            </div>
+
+            <div class="spec-strip" role="list" aria-label="Career highlights">
+                <div class="spec" role="listitem">
+                    <span class="spec__value">0-1</span>
+                    <span class="spec__label">Years of Practice</span>
+                </div>
+                <div class="spec" role="listitem">
+                    <span class="spec__value">0</span>
+                    <span class="spec__label">Projects Delivered</span>
+                </div>
+                <div class="spec" role="listitem">
+                    <span class="spec__value">RCE, SO2</span>
+                    <span class="spec__label">Licensed</span>
+                </div>
+                <div class="spec" role="listitem">
+                    <span class="spec__value">90.50</span>
+                    <span class="spec__label">Board Exam Rating</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT / S-101 ============ -->
+        <section class="sheet" id="about">
+            <div class="sheet__meta">
+                <span>PORTFOLIO</span>
+                <span>SHEET</span>
+                <span class="sheet__number">S-101</span>
+            </div>
+            <h2 class="section-title"><span class="section-title__index">01</span>Profile</h2>
+
+            <div class="about__grid">
+                <div class="about__portrait" aria-hidden="true">
+                    <!-- TODO: replace with <img src="your-photo.jpg" alt="Your Name"> -->
+                    <img src="images\Porras.jpg" alt="Christian Kyle Porras">
+                </div>
+
+                <div class="about__body">
+                    <p>
+                        I'm a licensed Civil Engineer based in Iloilo City, Philippines. focused on the analysis and design of reinforced concrete and structural steel systems for commercial and industrial clients. My work sits at the overlap of code compliance, constructability,
+                        and cost — a design that can't be built on schedule isn't a good design.
+                    </p>
+                    <p>
+                        Aside from doing structural analysis and design, I also teach part-time
+                    </p>
+
+                    <dl class="credentials">
+                        <div class="credentials__item">
+                            <dt>Education</dt>
+                            <dd>Bachelor of Science in Civil Engineering, [Iloilo Science and Technology University] — 2025</dd>
+                        </div>
+                        <div class="credentials__item">
+                            <dt>License</dt>
+                            <dd>Licensed Civil Engineer, March 2026</dd>
+                        </div>
+                        <div class="credentials__item">
+                            <dt>Affiliations</dt>
+                            <dd>Philippine Institute of Civil Engineers (PICE) Iloilo Chapter
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS / S-201 ============ -->
+        <section class="sheet" id="skills">
+            <div class="sheet__meta">
+                <span>PORTFOLIO</span>
+                <span>SHEET</span>
+                <span class="sheet__number">S-201</span>
+            </div>
+            <h2 class="section-title"><span class="section-title__index">02</span>Softwares &amp; Skills</h2>
+            <p class="section-intro">Read the way a drawing legend is read — each mark below is something I can specify, calculate, or model directly.</p>
+
+            <div class="legend">
+                <div class="legend__group">
+                    <h3>Analysis &amp; Design</h3>
+                    <ul class="tag-list">
+                        <li>Reinforced Concrete Design</li>
+                        <li>Structural Steel Design</li>
+                        <li>Seismic Retrofit</li>
+                        <li>Wind &amp; Lateral Load Systems</li>
+                        <li>Foundation Design</li>
+                    </ul>
+                </div>
+
+                <div class="legend__group">
+                    <h3>Software</h3>
+                    <ul class="tag-list">
+                        <li>STAAD.Pro</li>
+                        <li>RCDC</li>
+                        <li>Planswift</li>
+                        <li>AutoCAD / Revit</li>
+                        <li>Bluebeam Revu</li>
+                        <li>Microsoft Office</li>
+                    </ul>
+                </div>
+
+                <div class="legend__group">
+                    <h3>Codes &amp; Standards</h3>
+                    <ul class="tag-list">
+                        <li>NSCP 2015</li>
+                        <li>ACI 318</li>
+                        <li>AISC 360</li>
+                        <li>UBC</li>
+                    </ul>
+                </div>
+
+                <div class="legend__group">
+                    <h3>Practice</h3>
+                    <ul class="tag-list">
+                        <li>Construction Documents</li>
+                        <li>Structural Analysis &amp; Design</li>
+                        <li>Site Observation</li>
+                        <li>Client Coordination</li>
+                        <li>Construction Estimates</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS / S-301 ============ -->
+        <section class="sheet" id="projects">
+            <div class="sheet__meta">
+                <span>PORTFOLIO</span>
+                <span>SHEET</span>
+                <span class="sheet__number">S-301</span>
+            </div>
+            <h2 class="section-title"><span class="section-title__index">03</span>Projects made</h2>
+            <p class="section-intro">Below are some of the projects I have worked on</p>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-card__image" aria-hidden="true"><span>IMAGE</span></div>
+                    <div class="project-card__body">
+                        <div class="project-card__meta">
+                            <span class="sheet-tag sheet-tag--dark">S-301.1</span>
+                            <span class="project-card__type">Low-Rise / RCD</span>
+                        </div>
+                        <h3>Bernwood Homes eyy
+                            <!-- TODO -->
+                        </h3>
+                        <p>Low rise house design.</p>
+                        <ul class="tag-list tag-list--compact">
+                            <li>Reinforced Concrete</li>
+                            <li>STAAD.Pro</li>
+                            <li>Low Rise</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__image" aria-hidden="true"><span>IMAGE</span></div>
+                    <div class="project-card__body">
+                        <div class="project-card__meta">
+                            <span class="sheet-tag sheet-tag--dark">S-301.2</span>
+                            <span class="project-card__type">Steel</span>
+                        </div>
+                        <h3>Efficascent Oil Warehouse
+                            <!-- TODO -->
+                        </h3>
+                        <p>100 sqm steel warehouse with amazing stuff.</p>
+                        <ul class="tag-list tag-list--compact">
+                            <li>Steel Frame</li>
+                            <li>CYP 3D</li>
+                            <li>SMRF</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__image" aria-hidden="true"><span>IMAGE</span></div>
+                    <div class="project-card__body">
+                        <div class="project-card__meta">
+                            <span class="sheet-tag sheet-tag--dark">S-301.3</span>
+                            <span class="project-card__type">Renovation</span>
+                        </div>
+                        <h3>Porras Residences Renovation
+                            <!-- TODO -->
+                        </h3>
+                        <p>Installation of additional columns and rooms.</p>
+                        <ul class="tag-list tag-list--compact">
+                            <li>ETABS</li>
+                            <li>Reinforced Conrete</li>
+                            <li>Retrofitting</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__image" aria-hidden="true"><span>IMAGE</span></div>
+                    <div class="project-card__body">
+                        <div class="project-card__meta">
+                            <span class="sheet-tag sheet-tag--dark">S-301.4</span>
+                            <span class="project-card__type">Commercial / Steel</span>
+                        </div>
+                        <h3>Civil Engineering Office (ISAT-U)
+                            <!-- TODO -->
+                        </h3>
+                        <p>Two-storey steel office design.</p>
+                        <ul class="tag-list tag-list--compact">
+                            <li>SMRF</li>
+                            <li>Steel Design</li>
+                            <li>SAP2000</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCE / S-401 ============ -->
+        <section class="sheet" id="experience">
+            <div class="sheet__meta">
+                <span>PORTFOLIO</span>
+                <span>SHEET</span>
+                <span class="sheet__number">S-401</span>
+            </div>
+            <h2 class="section-title"><span class="section-title__index">04</span>Experience</h2>
+
+            <ol class="timeline">
+                <li class="timeline__item">
+                    <div class="timeline__marker">01</div>
+                    <div class="timeline__content">
+                        <h3>Structural Design Engineer</h3>
+                        <p class="timeline__date">2026 — Present</p>
+                        <p>Junior Structural Design Engineer of one of the lead Structural Design firms in the country.</p>
+                    </div>
+                </li>
+                <li class="timeline__item">
+                    <div class="timeline__marker">02</div>
+                    <div class="timeline__content">
+                        <h3>Civil Engineering Reviewee</h3>
+                        <p class="timeline__date">2025-2026</p>
+                        <p>Gillesania Review and Training Center reviewee for the March 2026 CELE.</p>
+                    </div>
+                </li>
+                <li class="timeline__item">
+                    <div class="timeline__marker">03</div>
+                    <div class="timeline__content">
+                        <h3>Civil Engineering Student</h3>
+                        <p class="timeline__date">2021-2025</p>
+                        <p>BS in Civil Engineering student in Iloilo Science and Technology University.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- ============ CONTACT / S-501 ============ -->
+        <section class="sheet sheet--contact" id="contact">
+            <div class="sheet__meta">
+                <span>PORTFOLIO</span>
+                <span>SHEET</span>
+                <span class="sheet__number">S-501</span>
+            </div>
+            <h2 class="section-title"><span class="section-title__index">05</span>Contact</h2>
+
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <p>Open to new project work, consulting, and peer review engagements. The fastest way to reach me is email.</p>
+
+                    <ul class="contact__list">
+                        <li><span>Email</span><a href="mailto:christiankyleporras.rce@gmail.com">christiankyleporras.rce@gmail.com</a></li>
+                        <li><span>Phone</span><a href="tel:09615285643">09615285643</a></li>
+                        <li><span>LinkedIn</span><a href="#" target="_blank" rel="noopener">linkedin.com/in/christian-kyle-porras</a></li>
+                        <li><span>Location</span><span>[Iloilo, Philippines]</span></li>
+                    </ul>
+
+                    <div class="stamp" aria-hidden="true">
+                        <div class="stamp__ring">
+                            <span>Certified and Licensed</span>
+                        </div>
+                        <div class="stamp__center">
+                            <strong>CK</strong>
+                            <small>RCE</small>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form" id="contact-form" novalidate>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+
+                    <label for="message">Project details</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn btn--primary">Send Message</button>
+                    <p class="contact__status" id="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER: DRAWING INDEX ============ -->
+    <footer class="footer">
+        <div class="footer__index">
+            <span class="footer__title">Sheet Index</span>
+            <a href="#hero">S-100 Cover</a>
+            <a href="#about">S-101 Profile</a>
+            <a href="#skills">S-201 Skills</a>
+            <a href="#projects">S-301 Projects</a>
+            <a href="#experience">S-401 Experience</a>
+            <a href="#contact">S-501 Contact</a>
+        </div>
+        <p class="footer__note">© <span id="year"></span> Christian Kyle Porras.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
